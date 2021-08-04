@@ -78,14 +78,14 @@ namespace 射影変換
         private void Form1_Load(object sender, EventArgs e)
         {
             //https://teratail.com/questions/256372
-            this.Size = new System.Drawing.Size(903, 508);
+            this.Size = new System.Drawing.Size(1100, 900);
 
             System.Drawing.Point px0 = new System.Drawing.Point(108, 311);   //直したい台形の座標
             System.Drawing.Point px1 = new System.Drawing.Point(46, 643);
             System.Drawing.Point px2 = new System.Drawing.Point(414, 639);
             System.Drawing.Point px3 = new System.Drawing.Point(350, 310);
 
-            Image img = System.Drawing.Image.FromFile("11.jpg");
+            Image img = System.Drawing.Image.FromFile("sample.jpg");
 
             imgSizeX = img.Width;
             imgSizeY = img.Height;
