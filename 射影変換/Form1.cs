@@ -56,13 +56,13 @@ namespace 射影変換
                     if (px[i] < 1 || imgSizeX - 1 < px[i] || py[i] < 1 || imgSizeY - 1 < py[i])
                     {//画像の外
                         max = rate;
-                        rate = (rate + min) / 2;
+                        rate = min + (rate - min) / 2;
                         break;
                     }
                     if (i == 3)
                     {
                         min = rate;
-                        rate = (max + rate) / 2;
+                        rate = rate + (max - rate) / 2;
                     }
                 }
                 if (Math.Abs(max - min) < 0.00001) break; //MaxとMinが一致したら
